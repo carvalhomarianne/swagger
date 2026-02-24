@@ -1,9 +1,74 @@
-.hero {
-    position: relative;
-    height: 25rem;
-    background: url() no-repeat center center cover;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave+Display&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+
+/* 
+Titulos:  
+ font-family: "Bebas Neue", sans-serif;
+ 
+
+ Frase destaque: 
+ .sedgwick-ave-display-regular {
+  font-family: "Sedgwick Ave Display", cursive;
+ 
+}
+
+
+
+Textos: font-family: "TikTok Sans", sans-serif;
+
+*/
+
+
+.title {
+
+    font-family: "Sedgwick Ave Display", cursive;
+    font-size: 100px;
+    color: #bb0000;
+
+}
+
+body {
+    background-color: black;
+}
+
+.banner {
+    height: 500px;
+    background: url(../img/autentic\ \(3\).png) no-repeat center !important;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+
+
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.btn {
+    border-radius: 50px;
+    font-size: 14px;
+    transition: 0.3s;
+    background-color: #bb0000;
+}
+
+.subtitulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ff0000  !important;
+}
+
+.logotipo {
+
+     height: 50px;
+    color: white;
 }
