@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swagger</title>
+    <!-- Icon -->
+    <link rel="Icon" href="./img/Corpo (1).png" type="image/png">
     <!-- Css do boostrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- meu css -->
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -18,30 +21,30 @@
         <nav class="navbar navbar-expand-lg bg-transparent border-bottom border-light">
             <div class="container-fluid">
                 <a class="navbar-brand text-light" href="#">
-                    
+
                     <img src="./img/Corpo (1).png" alt="" class="logotipo">
-                
+
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Sobre</a>
+                            <a class="nav-link text-light" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Avaliaçõesjjh</a>
+                            <a class="nav-link text-light" href="#">Avaliações</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Mais 
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Mais
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Provador</a></li>
@@ -58,15 +61,78 @@
 
     <main>
 
-        <section class="banner">
+        <section class="banner pt-5">
 
             <div class="banner-content">
 
-               <div class="title">Swagger</div>
-                <p class="subtitulo py-2">A loja que cria sua persona. Sem seguir tendências, vista sua autenticidade.</p>
-                <a href="#" class="btn text-light py-2 px-3">Ver coleção destaque</a>
+                <div class="title-principal">Swagger</div>
+                <p class="subtitulo py-2">A loja que cria sua persona. Sem seguir tendências, vista sua autenticidade.
+                </p>
+                <a href="#" class="btn text-dark py-3 px-4">Ver coleção destaque</a>
             </div>
 
+        </section>
+
+        <section id="sobre">
+            <div class="container my-lg-5 my-3">
+                <h2 class="titulo text-center py-5 pt-5 mt-4">Quem somos nós?</h2>
+                <!-- Area sobre a loja -->
+                <!-- Titulo -->
+                <!-- Coluna com imagem e texto -->
+                <div class="row">
+                    <!-- Texto -->
+                    <div class="col-6">
+                        <h3 class="mb-4">Na Swagger, cada peça foi pensada para vestir a sua essência.</h3>
+                        <p class="texto"> A moda não dita, a moda respira você. Somos mais que uma loja:
+                            somos um espaço onde autenticidade encontra estilo e confiança.
+                            <br>
+                            <br>
+                            Aqui você encontra roupas que acompanham seus passos sem perder a personalidade,
+                            criadas para quem não segue tendências, mas cria as suas.
+                            Entre, experimente e descubra como é sentir‑se livre para ser você mesmo — confiante, único
+                            e cheio de atitude.
+                        </p>
+
+
+
+                    </div>
+                    <!-- Imagem -->
+                    <div class="col-6"><img src="./img/freepik__background__94149.png" alt="Modelo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacoes">
+            <div class="container">
+                <div class="text-center my-5">
+                    <small class="rounded-pill bg-light-subtle text-muted py-2 px-3 ">Avaliações</small>
+                </div>
+
+
+                <div class="row g-4">
+                    <div class="col-md-4 col-xl-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <small><i class="bi bi-person-circle"></i></small>
+                                <h5 class="fw-bold">Amei!!</h5>
+                                <p>Super recomendo essa loja! As roupas são incríveis, únicas, o atendimento é ótimo,
+                                    ainda por cima tem a opção de combinar roupas, perfeita!!.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-4">
+                        <div class="card h-100">
+                            <div class="card-body"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
