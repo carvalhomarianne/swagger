@@ -9,6 +9,7 @@
     <link rel="Icon" href="./img/Corpo (1).png" type="image/png">
     <!-- Css do boostrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- meu css -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -22,7 +23,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand text-light" href="#">
 
-                    <img src="./img/Corpo (1).png" alt="" class="logotipo">
+                    <img src="./img/logo/Corpo (1).png" alt="" class="logotipo">
 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,7 +40,10 @@
                             <a class="nav-link text-light" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Avaliações</a>
+                            <a class="nav-link text-light" href="#diferenciais">Diferenciais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#avaliacoes">Avaliações</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button"
@@ -47,7 +51,7 @@
                                 Mais
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Provador</a></li>
+                                <li><a class="dropdown-item" href="./provador.html">Provador</a></li>
                                 <li><a class="dropdown-item" href="#">Coleções</a></li>
                             </ul>
                         </li>
@@ -61,9 +65,9 @@
 
     <main>
 
-        <section class="banner pt-5">
-
-            <div class="banner-content">
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
 
                 <div class="title-principal">Swagger</div>
                 <p class="subtitulo py-2">A loja que cria sua persona. Sem seguir tendências, vista sua autenticidade.
@@ -81,7 +85,7 @@
                 <!-- Coluna com imagem e texto -->
                 <div class="row">
                     <!-- Texto -->
-                    <div class="col-6">
+                    <div class="col-lg-6 col-12">
                         <h3 class="mb-4">Na Swagger, cada peça foi pensada para vestir a sua essência.</h3>
                         <p class="texto"> A moda não dita, a moda respira você. Somos mais que uma loja:
                             somos um espaço onde autenticidade encontra estilo e confiança.
@@ -97,43 +101,121 @@
 
                     </div>
                     <!-- Imagem -->
-                    <div class="col-6"><img src="./img/freepik__background__94149.png" alt="Modelo" class="img-fluid">
+                    <div class="col-lg-6 col-12"><img src="./img/galeria/freepik__background__94149.webp" alt="Modelo"
+                            class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="avaliacoes">
+        <section class="diferenciais py-5" id="diferenciais">
+            <div class="container text-center">
+                <h2 class="titulo mb-1">Nossos Diferenciais</h2>
+                <p class="text-muted mb-5 sub-diferenciais text-uppercase small">Aquilo que nos diferencia das outras
+                    lojas
+                </p>
+
+                <div class="row g-4 mt-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="diferencial-card h-100">
+                            <img src="./img/galeria/vogue magazine.jpg" class="card-img-top" alt="...">
+                           
+                            <div class="card-body ">
+                                <h5 class="card-title">Coleções exclusivas</h5>
+                                <p class="card-text">Cada coleção da Swagger é pensada para trazer peças únicas, com design moderno e identidade urbana.
+Aqui você encontra roupas que fogem do comum e destacam sua personalidade.</p>
+                                <a href="#" class="btn btn-primary btn-dif mb-4">Ver coleção</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="diferencial-card h-100">
+                            <img src="./img/galeria/close-up-clothes-rack-store.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Monte seu estilo</h5>
+                                <p class="card-text">Nosso provador virtual permite combinar peças e visualizar diferentes looks.
+Experimente novas combinações e descubra o estilo que mais combina com você.</p>
+                                <a href="./provador.html" class="btn btn-dif btn-primary mb-4">Monte seu look</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="diferencial-card h-100">
+                            <img src="./img/galeria/green-fabric.jpg" class="card-img-top" alt="...">
+                            <div class="card-body py-4">
+                                <h5 class="card-title">Qualidade e conforto</h5>
+                                <p class="card-text">Trabalhamos com tecidos selecionados e acabamento de qualidade para garantir conforto,
+durabilidade e estilo em todas as peças.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacoes" class="py-5">
             <div class="container">
                 <div class="text-center my-5">
-                    <small class="rounded-pill bg-light-subtle text-muted py-2 px-3 ">Avaliações</small>
+                    <span class="rounded-pill bg-light-subtle text-muted py-3 px-4 "> ⭐ Avaliações</span>
                 </div>
 
 
                 <div class="row g-4">
-                    <div class="col-md-4 col-xl-4">
-                        <div class="card h-100">
+                    <div class="col-lg-4 col-md-6 col-12">
+
+                        <div class="card review-card">
                             <div class="card-body">
-                                <small><i class="bi bi-person-circle"></i></small>
-                                <h5 class="fw-bold">Amei!!</h5>
-                                <p>Super recomendo essa loja! As roupas são incríveis, únicas, o atendimento é ótimo,
-                                    ainda por cima tem a opção de combinar roupas, perfeita!!.</p>
+                                <div class="review-user">
+                                    <i class="bi bi-person-circle fs-3"></i>
+                                    <span class="review-name">Ana Silva</span>
+
+                                </div>
+                                <div class="review-stars"> ⭐⭐⭐⭐⭐ </div>
+                                <h5 class="review-title">Amei!!</h5>
+                                <p class="review-text">Super recomendo essa loja! As roupas são incríveis, únicas, o
+                                    atendimento é ótimo,
+                                    ainda por cima tem a opção de combinar roupas, perfeita!!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xl-4">
-                        <div class="card h-100">
-                            <div class="card-body"></div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card review-card">
+                            <div class="card-body">
+                                <div class="review-user">
+                                    <i class="bi bi-person-circle fs-3"></i>
+                                    <span class="review-name">Isabelle Amaral</span>
+
+                                </div>
+                                <div class="review-stars"> ⭐⭐⭐⭐⭐ </div>
+                                <h5 class="review-title">Autenticidade total!</h5>
+                                <p class="review-text"> As roupas da Swagger são muito diferentes do que vejo nas outras
+                                    lojas.
+                                    A qualidade é excelente e o caimento ficou perfeito.
+                                    Com certeza vou comprar novamente.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <div class="card-body"></div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card review-card">
+                            <div class="card-body">
+                                <div class="review-user">
+                                    <i class="bi bi-person-circle fs-3"></i>
+                                    <span class="review-name">Mariana Costa</span>
+
+                                </div>
+                                <div class="review-stars"> ⭐⭐⭐⭐⭐ </div>
+                                <h5 class="review-title">Favoritei!</h5>
+                                <p class="review-text"> Atendimento muito bom e as peças são lindas.
+                                    Dá para montar combinações diferentes e criar um estilo próprio.
+                                    Recomendo muito a loja!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
     </main>
 

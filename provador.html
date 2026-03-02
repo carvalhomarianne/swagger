@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swagger-Provador</title>
+    <link rel="Icon" href="./img/Corpo (1).png" type="image/png">
+    <!-- Css do boostrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- meu css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Banner/hero -->
+        <nav class="navbar navbar-expand-lg bg-transparent border-bottom border-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">
+
+                    <img src="./img/logo/Corpo (1).png" alt="" class="logotipo">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#diferenciais">Diferenciais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#avaliacoes">Avaliações</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Mais
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Provador</a></li>
+                                <li><a class="dropdown-item" href="#">Coleções</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <section class="container text-center mt-5">
+        <h1 class="titulo">Seja o protagonista do seu estilo! </h1>
+        <span class="text-muted small sub-provador mb-5">Criamos um provador virtual para que você possa montar looks
+            únicos e personalizados, sem ter que esperar sua roupa chegar.</span>
+
+      <!-- Parte de cima -->
+    <div id="topCarousel" class="carousel slide provador-top" data-bs-ride="false">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="" class="look-img">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/camiseta2.png" class="look-img">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/camiseta3.png" class="look-img">
+        </div>
+
+      </div>
+
+      <!-- BOTÕES -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#topCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#topCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+
+    <!-- Parte de baixo -->
+    <div id="bottomCarousel" class="carousel slide provador-bottom" data-bs-ride="false">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="img/calca1.png" class="look-img">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/calca2.png" class="look-img">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/calca3.png" class="look-img">
+        </div>
+
+      </div>
+
+      <!-- Botões -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#bottomCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#bottomCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
