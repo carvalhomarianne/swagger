@@ -38,7 +38,15 @@ body {
     background-color: black;
 }
 
+<<<<<<< Updated upstream
 .hero {
+=======
+.banner {
+
+    height: 500px;
+    background: url(../img/autentic\ \(3\).png) no-repeat center !important;
+    background-size: cover;
+>>>>>>> Stashed changes
     position: relative;
     width: 100%;
 
@@ -53,6 +61,7 @@ body {
     align-items: center;
 
 }
+<<<<<<< Updated upstream
 .titulo-nav {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
@@ -60,6 +69,15 @@ body {
     text-transform: uppercase;
     padding-right: 10px;
     padding-left: 10px;
+=======
+
+.banner-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translateY(-50%);
+>>>>>>> Stashed changes
     color: white;
 }
 
@@ -100,7 +118,11 @@ body {
 
 .btn:hover {
     transform: scale(1.1);
+<<<<<<< Updated upstream
     background-color: #a30000 !important;
+=======
+    background-color: #ff0000 !important;
+>>>>>>> Stashed changes
 }
 
 .logotipo {
