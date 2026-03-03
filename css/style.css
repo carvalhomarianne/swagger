@@ -26,7 +26,15 @@ body {
     background-color: black;
 }
 
+<<<<<<< Updated upstream
 .hero {
+=======
+.banner {
+
+    height: 500px;
+    background: url(../img/autentic\ \(3\).png) no-repeat center !important;
+    background-size: cover;
+>>>>>>> Stashed changes
     position: relative;
     width: 100%;
 
@@ -42,7 +50,12 @@ body {
 
 }
 
+<<<<<<< Updated upstream
 .hero-overlay {
+=======
+.banner-content {
+    width: 100%;
+>>>>>>> Stashed changes
     position: absolute;
     inset: 0;
 
