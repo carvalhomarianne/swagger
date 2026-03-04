@@ -38,15 +38,7 @@ body {
     background-color: black;
 }
 
-<<<<<<< Updated upstream
 .hero {
-=======
-.banner {
-
-    height: 500px;
-    background: url(../img/autentic\ \(3\).png) no-repeat center !important;
-    background-size: cover;
->>>>>>> Stashed changes
     position: relative;
     width: 100%;
 
@@ -61,7 +53,7 @@ body {
     align-items: center;
 
 }
-<<<<<<< Updated upstream
+
 .titulo-nav {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
@@ -69,15 +61,6 @@ body {
     text-transform: uppercase;
     padding-right: 10px;
     padding-left: 10px;
-=======
-
-.banner-content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 11%;
-    transform: translateY(-50%);
->>>>>>> Stashed changes
     color: white;
 }
 
@@ -118,11 +101,7 @@ body {
 
 .btn:hover {
     transform: scale(1.1);
-<<<<<<< Updated upstream
     background-color: #a30000 !important;
-=======
-    background-color: #ff0000 !important;
->>>>>>> Stashed changes
 }
 
 .logotipo {
@@ -205,9 +184,9 @@ h4 {
 
 .review-title {
     font-family: 'Josefin Sans', sans-serif;
-font-weight: 800;
+    font-weight: 800;
 
-} 
+}
 
 
 
@@ -269,20 +248,21 @@ font-weight: 800;
 }
 
 .provador-top {
+    border-top: 1px solid #a30000;
+    border-left: 1px solid #a30000;
+    border-right: 1px solid #a30000;
     margin-bottom: -30px;
 }
 
 .provador-bottom {
-    margin-top: -30px;
+    padding-top: 20px;
+    margin-top: -20px;
+border-bottom: 1px solid #a30000;
+    border-left: 1px solid #a30000;
+    border-right: 1px solid #a30000;
 }
 
-.look-img {
-    width: 300px;
-    max-width: 100%;
-    margin: auto;
-    display: block;
-    filter: drop-shadow(0px 0px 15px #00f7ff);
-}
+
 
 .diferencial-card .card-img-top {
     width: 100%;
@@ -306,55 +286,58 @@ font-weight: 800;
 
 /* Container pai — coloca tudo lado a lado */
 .provador-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
 }
 
 /* A coluna do meio onde ficam os carrosséis */
 .manequim-container {
-  width: 300px;
-  flex-shrink: 0; /* impede que encolha */
-  position: relative;
+    width: 300px;
+    flex-shrink: 0;
+    /* impede que encolha */
+    position: relative;
 }
 
 /* Linha vermelha que divide topo e baixo */
 .manequim-container::after {
-  content: '';
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  top: 50%;
-  height: 1px;
-  background: rgba(163, 0, 0, 0.5);
-  z-index: 10;
-  pointer-events: none;
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    height: 1px;
+    background: rgba(163, 0, 0, 0.5);
+    z-index: 10;
+    pointer-events: none;
 }
 
 /* css das imagens do provador */
 
 /* Imagem da peça de cima */
 .look-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  background: #111; /* fundo enquanto a img carrega */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background: #111;
+    /* fundo enquanto a img carrega */
 }
 
 /* Carrossel de cima: bordas arredondadas só no topo */
 .carousel-top {
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
+
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
 }
 
 /* Carrossel de baixo: bordas arredondadas só embaixo */
 .carousel-bottom {
-  border-radius: 0 0 8px 8px;
-  overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
 }
 
 
@@ -363,52 +346,296 @@ font-weight: 800;
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 36px;
-  height: 36px;
-  background: rgba(163, 0, 0, 0.85);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 1;
-  transition: background 0.3s;
+    width: 36px;
+    height: 36px;
+    background: rgba(163, 0, 0, 0.85);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: background 0.3s;
 }
 
 /* Posiciona os botões para fora do carrossel */
-.carousel-control-prev { left: -18px; }
-.carousel-control-next { right: -18px; }
+.carousel-control-prev {
+    left: -18px;
+}
+
+.carousel-control-next {
+    right: -18px;
+}
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background: #a30000;
+    background: #a30000;
 }
 
 
 /* css do painel */
 
 .info-label {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #a30000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #a30000;
 }
 
 .info-nome {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 .info-preco {
-  font-family: 'Jost', sans-serif;
-  font-weight: 300;
-  color: #aaa;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: #aaa;
 }
 
 .info-divider {
-  width: 40px;
+    width: 40px;
+    height: 1px;
+    background: #a30000;
+    margin: 10px 0 16px;
+}
+
+.carousel-item {
+    height: 300px;
+    overflow: hidden;
+    background: #111;
+}
+
+.carousel-item img {
+    padding-top: 3px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.footer {
+  background-color: #000;
+  padding-top: 50px;
+}
+
+.footer-line {
+  width: 100%;
   height: 1px;
   background: #a30000;
-  margin: 10px 0 16px;
+  margin-bottom: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-quote {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: #555;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #a30000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-email {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-email:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1a1a1a;
+  padding: 16px 0;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  color: #333;
+  letter-spacing: 0.1em;
+}
+
+/* css das coleções */
+
+/* ── HERO COLEÇÕES ── */
+.colecoes-hero {
+  position: relative;
+  height: 60vh;
+  background-image: url("../img/banner/autentic-_1380-x-700-px_-_5_.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colecoes-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.colecoes-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.colecoes-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #a30000;
+  margin-bottom: 12px;
+}
+
+/* ── GALERIA GRID ── */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+/* Card padrão */
+.galeria-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  cursor: pointer;
+  background: #111;
+}
+
+/* Card grande ocupa 2 colunas */
+.galeria-card--grande {
+  grid-column: span 2;
+  aspect-ratio: 16 / 9;
+}
+
+.galeria-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+/* Overlay escuro que aparece no hover */
+.galeria-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Linha vermelha antes do nome */
+.galeria-info {
+  border-left: 2px solid #a30000;
+  padding-left: 16px;
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.galeria-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #a30000;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.galeria-nome {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.galeria-desc {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #ccc;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Efeito hover */
+.galeria-card:hover img {
+  transform: scale(1.05);
+}
+
+.galeria-card:hover .galeria-overlay {
+  opacity: 1;
+}
+
+.galeria-card:hover .galeria-info {
+  transform: translateY(0);
+}
+
+/* ── FRASE FINAL ── */
+.colecoes-frase-texto {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 300;
+  font-style: italic;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+/* ── RESPONSIVO ── */
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-card--grande {
+    grid-column: span 1;
+    aspect-ratio: 3 / 4;
+  }
 }
