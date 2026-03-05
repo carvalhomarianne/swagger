@@ -9,6 +9,9 @@
   <!-- Css do boostrap -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- css do AOS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- meu css -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -40,6 +43,12 @@
 
 
           </ul>
+
+          <a class="nav-link text-light position-relative ms-auto mx-2" href="#" id="btnCarrinho">
+            <i class="bi bi-bag fs-5"></i>
+            <span class="carrinho-contador" id="carrinhoContador">0</span>
+          </a>
+
         </div>
       </div>
     </nav>
@@ -56,7 +65,14 @@
     <div class="provador-wrapper">
 
       <div class="info-painel">
-
+        <div class="info-painel">
+          <span class="info-label">Parte de cima</span>
+          <div class="info-divider"></div>
+          <h3 class="info-nome" id="nomeTop">Selecione uma peça</h3>
+          <p class="info-preco" id="precoTop">—</p>
+          <p class="info-desc" id="descTop">Navegue pelas setas para escolher sua blusa.</p>
+          <a href="#" class="btn btn-dif mt-3" id="linkTop">Comprar</a>
+        </div>
       </div>
       <div class="manequim-container">
 
@@ -64,51 +80,71 @@
 
           <div class="carousel-inner">
 
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-nome="Jaqueta de couro fivelada" data-preco="R$ 129,90"
+              data-desc="Couro premium, forro interno confortável, bolsos funcionais, design atemporal e detalhes de fivela para um toque de estilo. Peça da nossa coleção Noir."
+              data-link="#">
+
               <img src="./img/galeria/cima.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
-              <img src="./img/galeria/cima2.png" class="look-img">
-            </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Camisa de cetim com botões" data-preco="R$ 59,90"
+              data-desc="Design elegante, tecido de cetim suave, botões frontais, corte moderno e detalhes sutis para um toque de sofisticação. Peça da nossa coleção Cherise."
+              data-link="#">
               <img src="./img/galeria/cima3.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Top cropped de couro " data-preco="R$ 60,10"
+              data-desc="Couro premium, de alta costura, detalhes elegantes e conforto excepcional. Peça da nossa coleção Fate."
+              data-link="#">
               <img src="./img/galeria/cima4.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Top decotado em couro" data-preco="R$ 129,90"
+              data-desc="Couro premium, confortável e corte ousado. Peça da nossa coleção Attitude." data-link="#">
               <img src="./img/galeria/cima5.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Blazer acinturado " data-preco="R$ 189,90"
+              data-desc="Blazer elegante e ousado, no estilo corset. Materiais excelentes para combinar beleza e conforto. Peça da nossa coleção Chacoanne."
+              data-link="#">
               <img src="./img/galeria/cima6.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Blusa assimétrica " data-preco="R$ 229,90"
+              data-desc="Peça premium que mistura elementos clássicos com um toque moderno. Peça da nossa coleção de lançamento Swag blood."
+              data-link="#">
               <img src="./img/galeria/cima7.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
-              <img src="./img/galeria/cima8.png" class="look-img">
-            </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Regata shadow" data-preco="R$ 129,90"
+              data-desc="Regata moderna, com ilustração moderna e descoolada. Peça da nossa coleção de lançamento Swag blood."
+              data-link="#">
               <img src="./img/galeria/cima9.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Jaqueta de couro branca e preta" data-preco="R$ 179,90"
+              data-desc="Couro premium, forro interno confortável, design atemporal e descolado, em cor dupla. Peça da nossa coleção de lançamento Swag Blood."
+              data-link="#">
               <img src="./img/galeria/cima10.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Jaqueta de couro curta" data-preco="R$ 129,90"
+              data-desc="Couro premium, forro interno confortável, design atemporal e cor dupla. Peça da nossa coleção Noir."
+              data-link="#">
               <img src="./img/galeria/cima11.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Jaqueta de couro forrada" data-preco="R$ 129,90"
+              data-desc="Couro premium, forro interno confortável, bolsos funcionais, e design descolado. Peça da nossa coleção Fate."
+              data-link="#">
+              <img src="./img/galeria/cima12.png" class="look-img">
+            </div>
+
+            <div class="carousel-item" data-nome="Casaco afivelado branco" data-preco="R$ 229,90"
+              data-desc="Tecido selecionado, confortável, design vintage e detalhes de fivela para um toque de estilo e sofisticação. Peça da nossa coleção Fate."
+              data-link="#">
               <img src="./img/galeria/cima13.png" class="look-img">
             </div>
 
@@ -128,24 +164,33 @@
 
           <div class="carousel-inner">
 
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-nome="Calça de couro reta" data-preco="R$ 139,90"
+              data-desc="Calça de couro reta, com design moderno e confortável. Peça da nossa coleção Noir."
+              data-link="#">
               <img src="./img/galeria/baixo.png" class="look-img">
             </div>
 
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Saia de couro marrom" data-preco="R$ 79,90"
+              data-desc="Saia de couro marrom, com design elegante e sofisticada. Peça da nossa coleção Attitude."
+              data-link="#">
               <img src="./img/galeria/baixo4.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Saia plissada em couro" data-preco="R$ 89,90"
+              data-desc="Saia plissada acinturada em couro marrom. Peça da nossa coleção Fate." data-link="#">
               <img src="./img/galeria/baixo5.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Calça de couro reta" data-preco="R$ 139,90"
+              data-desc="Calça de couro reta marrom, com design moderno e elegante. Peça da nossa coleção Chacoanne."
+              data-link="#">
               <img src="./img/galeria/baixo6.png" class="look-img">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" data-nome="Saia assimetrica de couro" data-preco="R$ 69,90"
+              data-desc="Saia assimétrica de couro marrom, com design elegante. Peça da nossa coleção Attitude."
+              data-link="#">
               <img src="./img/galeria/baixo7.png" class="look-img">
             </div>
 
@@ -167,7 +212,14 @@
       </div>
 
       <div class="info-painel">
-
+        <div class="info-painel">
+          <span class="info-label">Parte de baixo</span>
+          <div class="info-divider"></div>
+          <h3 class="info-nome" id="nomeBottom">Selecione uma peça</h3>
+          <p class="info-preco" id="precoBottom">—</p>
+          <p class="info-desc" id="descBottom">Navegue pelas setas para escolher sua calça.</p>
+          <a href="#" class="btn btn-dif mt-3" id="linkBottom">Comprar</a>
+        </div>
       </div>
 
 
@@ -176,29 +228,55 @@
     </div>
     <!-- Parte de cima -->
   </section>
-   <footer class="footer mt-5">
-        <div class="footer-line"></div>
-        <div class="container footer-content">
+  <footer class="footer mt-5">
+    <div class="footer-line"></div>
+    <div class="container footer-content">
 
-            <div class="footer-frase">
-                <span class="footer-brand">SWAGGER</span>
-                <p class="footer-quote">"Sem seguir tendências, vista sua autenticidade."</p>
-            </div>
+      <div class="footer-frase">
+        <span class="footer-brand">SWAGGER</span>
+        <p class="footer-quote">"Sem seguir tendências, vista sua autenticidade."</p>
+      </div>
 
-            <div class="footer-contato">
-                <span class="footer-label">Contato</span>
-               <a href="mailto:carvalhofmarianne@gmail.com" class="footer-email">carvalhofmarianne@gmail.com</a>
-            </div>
+      <div class="footer-contato">
+        <span class="footer-label">Contato</span>
+        <a href="mailto:carvalhofmarianne@gmail.com" class="footer-email">carvalhofmarianne@gmail.com</a>
+      </div>
 
-        </div>
+    </div>
 
-        <div class="footer-bottom">
-            <span>© 2025 Swagger. Todos os direitos reservados.</span>
-        </div>
-    </footer>
+    <div class="footer-bottom">
+      <span>© 2025 Swagger. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+  <!-- Carrinho -->
+  <div class="carrinho-overlay" id="carrinhoOverlay"></div>
 
+  <div class="carrinho-panel" id="carrinhoPanel">
+    <div class="carrinho-header">
+      <span class="carrinho-titulo">Seu Carrinho</span>
+      <button class="carrinho-fechar" id="carrinhoFechar">
+        <i class="fa-solid fa-bag-shopping fa-lg"></i>
+      </button>
+    </div>
+    <div class="carrinho-items" id="carrinhoItems">
+      <p class="carrinho-vazio">Seu carrinho está vazio.</p>
+    </div>
+    <div class="carrinho-footer">
+      <div class="carrinho-total">
+        <span class="footer-label">Total</span>
+        <span class="carrinho-total-valor" id="carrinhoTotal">R$ 0,00</span>
+      </div>
+      <button class="btn btn-dif w-100 mt-3">Finalizar Compra</button>
+    </div>
+  </div>
+<!-- JS do AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/script.js"></script>
+
 </body>
 
 </html>
