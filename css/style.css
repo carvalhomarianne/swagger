@@ -39,29 +39,24 @@ body {
 }
 
 .banner {
-
-    height: 500px;
-    background: url(../img/autentic\ \(3\).png) no-repeat center !important;
+    min-height: 100dvh;
+    height: auto;
+    background: url(../img/banner/autentic-_1380-x-700-px_-_5_.webp) no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
-
     display: flex;
     align-items: center;
-
+    position: relative;
 }
 
-.banner-content {
-    width: 100%;
+.banner-overlay {
     position: absolute;
     inset: 0;
-
     background: rgba(0, 0, 0, 0.6);
 }
 
-.hero-content {
+.banner-content {
     position: relative;
     z-index: 2;
-
     max-width: 600px;
     margin-left: 8%;
     color: white;
